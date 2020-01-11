@@ -1,0 +1,33 @@
+City,League,State,Team Name,Latitude (generated),Longitude (generated)
+Anaheim,AL,CA,Los Angeles Angels of Anaheim,33.8348,-117.9117
+Arlington,AL,TX,Texas Rangers,32.7356,-97.1071
+Atlanta,NL,GA,Atlanta Braves,33.7491,-84.3902
+Baltimore,AL,MD,Baltimore Orioles,39.2909,-76.6108
+Boston,AL,MA,Boston Red Sox,42.3605,-71.0596
+Chicago,NL,IL,Chicago Cubs,41.8756,-87.6244
+Chicago,AL,IL,Chicago White Sox,41.8756,-87.6244
+Cincinnati,NL,OH,Cincinnati Reds,39.1015,-84.5125
+Cleveland,AL,OH,Cleveland Indians,41.5052,-81.6934
+Denver,NL,CO,Colorado Rockies,39.7348,-104.9653
+Detroit,AL,MI,Detroit Tigers,42.3487,-83.0567
+Houston,NL,TX,Houston Astros,29.7589,-95.3677
+Houston,AL,TX,Houston Astros,29.7589,-95.3677
+Kansas City,AL,MO,Kansas City Royals,39.0845,-94.563
+Los Angeles,NL,CA,Los Angeles Dodgers,34.0544,-118.2439
+Miami,NL,FL,Florida Marlins,25.7743,-80.1937
+Milwaukee,NL,WI,Milwaukee Brewers,43.0115,-87.9735
+Milwaukee,AL,WI,Milwaukee Brewers,43.0115,-87.9735
+Minneapolis,AL,MN,Minnesota Twins,44.9773,-93.2655
+New York City,NL,NY,New York Mets,40.7648,-73.9808
+New York City,AL,NY,New York Yankees,40.7648,-73.9808
+Oakland,AL,CA,Oakland Athletics,37.8045,-122.2714
+Olcott,AL,NY,Toronto Blue Jays,43.3378,-78.7148
+Philadelphia,NL,PA,Philadelphia Phillies,40.0115,-75.1327
+Phoenix,NL,AZ,Arizona Diamondbacks,33.4486,-112.0773
+Pittsburgh,NL,PA,Pittsburgh Pirates,40.4417,-79.9901
+San Diego,NL,CA,San Diego Padres,32.7174,-117.1628
+San Francisco,NL,CA,San Francisco Giants,37.7648,-122.463
+Seattle,AL,WA,Seattle Mariners,47.6038,-122.3301
+St. Louis,NL,MO,St. Louis Cardinals,38.63,-90.19
+Tampa,AL,FL,Tampa Bay Rays,27.9478,-82.4584
+Washington,NL,DC,Washington Nationals,38.895,-77.0366

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MLB Team Statistics</title>
+    <script>
+            function initViz() {
+            var containerDivMap = document.getElementById("vizContainerMap"),
+            url = "https://public.tableau.com/shared/7MFBKPCFR?:display_count=y&:origin=viz_share_link"
+            options = {
+                hideTabs: true,
+                onFirstInteractive: function () {
+                    console.log("Run this code when the viz has finished loading.");
+                }
+            };
+    
+            var viz = new tableau.Viz(containerDivMap, url, options);
+            // Create a viz object and embed it in the container div.
+
+
+
+
+
+            var containerDivYear = document.getElementById("vizContainerYear"),
+                url = "https://public.tableau.com/views/MLB_YearStats/YearStats?:display_count=y&publish=yes&:origin=viz_share_link"
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+    
+            var viz = new tableau.Viz(containerDivYear, url, options);
+            // Create a viz object and embed it in the container div.
+
+
+
+
+            var containerDivTeam = document.getElementById("vizContainerTeam"),
+                url = "https://public.tableau.com/views/MLB_TeamStats/TeamStats?:display_count=y&publish=yes&:origin=viz_share_link"
+                options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+    
+            var viz = new tableau.Viz(containerDivTeam, url, options);
+            // Create a viz object and embed it in the container div.
+        }
+    
+    </script>
+
+</head>
+<body onload="initViz();">
+    <div class="jumbotron text-center">
+        <h1>MLB Statistics</h1>
+        <img width="1100" height="600" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png" alt="MLB logo">   
+    </div>
+
+    <center>
+        <div data-aos="zoom-in"
+            data-aos-delay="350"
+            data-aos-duration="750">
+            <div id="vizContainerMap" style="width:device-width; height:700px;"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div data-aos="fade-down-left"
+            data-aos-delay="100"
+            data-aos-duration="1000">
+            <h2>Team Statistics and Wins by Year</h2>
+            Choose a team and then one or more stat(s) to compare to team wins on a year by year basis. For best results, choose a statistic that is not <em>"per game"</em>.
+            <br>
+            <div id="vizContainerYear" style="width:device-width; height:650px;"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div data-aos="fade-down-right"
+            data-aos-delay="100"
+            data-aos-duration="1000">
+            <h2>Team Statistics Per Season</h2>
+            Choose one or more <em>"per game"</em> stat(s) to compare to each team's average number of wins per season.
+            <div id="vizContainerTeam" style="width:device-width; height:650px;"></div>
+        </div>
+    </center>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
